@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${result}"></h1>
+<form method="post" action="/create">
+    <p>Name:</p>
+    <input name="name"><br/>
+    <p>Email:</p>
+    <input name="email"><br/>
+    <p>Address</p>
+    <input name="address"><br/>
+    <input type="submit" value="Create">
+</form>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
